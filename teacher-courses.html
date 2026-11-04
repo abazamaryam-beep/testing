@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All courses | Doroos</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><img src="logo.svg" alt="" width="36" height="36"><span>Doroos</span></a>
+  <nav><span class="who">Teacher: Mohammad Ali</span><a href="index.html">Log out</a></nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="active" href="teacher-courses.html">All courses</a>
+    <a href="course-add.html">Add course</a>
+    <a href="teacher-students.html">Students</a>
+    <a href="teacher-marks.html">Marks</a>
+    <a href="chat-teacher.html">Chat</a>
+  </aside>
+  <main class="content">
+    <div class="head-row"><h1>All courses</h1><a class="btn gold" href="course-add.html">+ Add course</a></div>
+    <div class="grid">
+      <article class="course-card">
+        <div class="course-img ">M</div>
+        <div class="course-body"><h3>Mathematics 101</h3><p>Algebra and calculus basics.</p><span class="meta">Base mark: 100</span></div>
+        <div class="course-actions"><a class="btn small alt" href="course-edit.html">Edit</a>
+          <form action="#" method="post"><button class="btn small danger" type="submit">Delete</button></form></div>
+      </article>
+      <article class="course-card">
+        <div class="course-img c2">E</div>
+        <div class="course-body"><h3>English Language</h3><p>Speaking and writing for beginners.</p><span class="meta">Base mark: 100</span></div>
+        <div class="course-actions"><a class="btn small alt" href="course-edit.html">Edit</a>
+          <form action="#" method="post"><button class="btn small danger" type="submit">Delete</button></form></div>
+      </article>
+      <article class="course-card">
+        <div class="course-img c3">P</div>
+        <div class="course-body"><h3>Physics</h3><p>Motion and energy.</p><span class="meta">Base mark: 50</span></div>
+        <div class="course-actions"><a class="btn small alt" href="course-edit.html">Edit</a>
+          <form action="#" method="post"><button class="btn small danger" type="submit">Delete</button></form></div>
+      </article>
+    </div>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marks | Doroos</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><img src="logo.svg" alt="" width="36" height="36"><span>Doroos</span></a>
+  <nav><span class="who">Teacher: Mohammad Ali</span><a href="index.html">Log out</a></nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <a href="teacher-courses.html">All courses</a>
+    <a href="course-add.html">Add course</a>
+    <a href="teacher-students.html">Students</a>
+    <a class="active" href="teacher-marks.html">Marks</a>
+    <a href="chat-teacher.html">Chat</a>
+  </aside>
+  <main class="content">
+    <h1>Enter marks</h1>
+    <section class="panel">
+      <form action="#" method="get" class="choices">
+        <label for="pick">Course:</label>
+        <select id="pick" name="course" style="max-width:240px"><option>Mathematics 101</option><option>English Language</option><option>Physics</option></select>
+        <button class="btn small alt" type="submit">Show</button>
+      </form>
+    </section>
+    <section class="panel">
+      <h2>Mathematics 101 — base mark 100</h2>
+      <form action="#" method="post">
+        <div class="table-wrap"><table>
+          <thead><tr><th>Student</th><th>Mark</th></tr></thead>
+          <tbody>
+            <tr><td>Ahmad Khaled</td><td><input type="number" name="mark[1]" min="0" max="100" value="88" aria-label="Ahmad's mark"></td></tr>
+            <tr><td>Laith Mahmoud</td><td><input type="number" name="mark[3]" min="0" max="100" aria-label="Laith's mark"></td></tr>
+          </tbody>
+        </table></div>
+        <button class="btn gold" type="submit" style="margin-top:16px">Save marks</button>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>

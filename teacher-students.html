@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Students | Doroos</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><img src="logo.svg" alt="" width="36" height="36"><span>Doroos</span></a>
+  <nav><span class="who">Teacher: Mohammad Ali</span><a href="index.html">Log out</a></nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <a href="teacher-courses.html">All courses</a>
+    <a href="course-add.html">Add course</a>
+    <a class="active" href="teacher-students.html">Students</a>
+    <a href="teacher-marks.html">Marks</a>
+    <a href="chat-teacher.html">Chat</a>
+  </aside>
+  <main class="content">
+    <h1>Students and enrollment</h1>
+    <section class="panel">
+      <h2>All students</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Name</th><th>Email</th><th>Enrolled in</th><th>Assign to a course</th></tr></thead>
+        <tbody>
+          <tr><td>Ahmad Khaled</td><td>ahmad@mail.com</td><td>Mathematics 101, Physics</td>
+            <td><form action="#" method="post" class="choices"><select name="course" aria-label="Course"><option>English Language</option></select><button class="btn small" type="submit">Enroll</button></form></td></tr>
+          <tr><td>Sara Ali</td><td>sara@mail.com</td><td>English Language</td>
+            <td><form action="#" method="post" class="choices"><select name="course" aria-label="Course"><option>Mathematics 101</option><option>Physics</option></select><button class="btn small" type="submit">Enroll</button></form></td></tr>
+          <tr><td>Laith Mahmoud</td><td>laith@mail.com</td><td>—</td>
+            <td><form action="#" method="post" class="choices"><select name="course" aria-label="Course"><option>Mathematics 101</option><option>English Language</option><option>Physics</option></select><button class="btn small" type="submit">Enroll</button></form></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+  </main>
+</div>
+</body>
+</html>

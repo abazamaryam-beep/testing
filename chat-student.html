@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chat | Doroos</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><img src="logo.svg" alt="" width="36" height="36"><span>Doroos</span></a>
+  <nav><span class="who">Student: Ahmad Khaled</span><a href="index.html">Log out</a></nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <a href="student-courses.html">My courses & marks</a>
+    <a class="active" href="chat-student.html">Chat</a>
+  </aside>
+  <main class="content">
+    <h1>Community chat</h1>
+    <section class="panel chat">
+      <div class="chat-log">
+        <div class="msg teacher"><b>Mohammad Ali (Teacher)</b>Hello everyone, the Math exam is next week.</div>
+        <div class="msg"><b>Sara Ali (Student)</b>Does it include chapter 5?</div>
+        <div class="msg teacher"><b>Mohammad Ali (Teacher)</b>Yes, up to the end of chapter 5.</div>
+        <div class="msg mine"><b>Me</b>Thank you, sir!</div>
+      </div>
+      <form class="chat-form" action="#" method="post">
+        <label for="m" style="position:absolute;left:-9999px">Your message</label>
+        <input id="m" name="message" type="text" placeholder="Type a message..." required>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>

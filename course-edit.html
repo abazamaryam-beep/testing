@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit course | Doroos</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html"><img src="logo.svg" alt="" width="36" height="36"><span>Doroos</span></a>
+  <nav><span class="who">Teacher: Mohammad Ali</span><a href="index.html">Log out</a></nav>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="active" href="teacher-courses.html">All courses</a>
+    <a href="course-add.html">Add course</a>
+    <a href="teacher-students.html">Students</a>
+    <a href="teacher-marks.html">Marks</a>
+    <a href="chat-teacher.html">Chat</a>
+  </aside>
+  <main class="content">
+    <h1>Edit course</h1>
+    <form class="card-form" action="#" method="post" enctype="multipart/form-data" style="max-width:none">
+      <label for="cname">Course name</label>
+      <input id="cname" name="name" type="text" value="Mathematics 101" required>
+      <label for="cdesc">Description</label>
+      <textarea id="cdesc" name="description" rows="4">Algebra and calculus basics.</textarea>
+      <div class="row">
+        <div><label for="cmark">Base mark</label><input id="cmark" name="base_mark" type="number" min="0" max="100" value="100" required></div>
+        <div><label for="cimg">Course image</label><input id="cimg" name="image" type="file" accept="image/*"></div>
+      </div>
+      <button class="btn gold full" type="submit">Save changes</button>
+    </form>
+  </main>
+</div>
+</body>
+</html>
